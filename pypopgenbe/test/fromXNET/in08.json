@@ -1,0 +1,47 @@
+{
+    "population_size": 10000,
+    "dataset_name": "P3M",
+    "age_range": [
+        18,
+        60
+    ],
+    "bmi_range": [
+        20,
+        25
+    ],
+    "height_range": [
+        120,
+        170
+    ],
+    "prob_of_male": 0.5,
+    "probs_of_ethnicities": [
+        0.3,
+        0.4,
+        0.3
+    ],
+    "is_richly_perfused_tissue_discrete": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+    ],
+    "is_slowly_perfused_tissue_discrete": [
+        true,
+        false,
+        false,
+        false
+    ],
+    "enzyme_rate_parameter": "Vmax",
+    "enzyme_names": ["e1", "e2"],
+    "in_vitro_enzyme_rates": [123, 456],
+    "flow_units": "LitresPerHour",
+    "enzyme_rate_units": "PicoGramsPerMinute",
+    "molecular_weight": 321,
+    "seed": 42
+}

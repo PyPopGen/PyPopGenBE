@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<!-- The mean values for organ volumes and flows, used in the WS algorithm.
+See Willmann 2007. "Development of a Physiology-Based Whole Body Population Model For Assessing the Influence of Individual Variablility on the Pharmacokinetics of Drugs".  J. Pharmocokinetics and Pharmacodynamics. 
+Flow and Volume means are taken from Table I. 
+Flow coeffs of var are all 0.05, see p12.   
+Volume coeffs of var are from Table 3.-->
+<root type="Mean values for algorithm">
+<Sex type="Male">
+	<tissue type="Lung">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">1.0</distribution>
+			<distribution type="Coeff of Variation">0</distribution>
+		</param>
+		<param unit="Lognormal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.018</distribution>
+			<distribution type="Coeff of Variation">.33</distribution>
+		</param>
+	</tissue>
+	<tissue type="Brain">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.128</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.021</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+	</tissue>
+	<tissue type="Kidneys">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.217</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.006</distribution>
+			<distribution type="Coeff of Variation">.25</distribution>
+		</param>
+	</tissue>
+	<tissue type="Liver">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.069</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.032</distribution>
+			<distribution type="Coeff of Variation">.24</distribution>
+		</param>
+	</tissue>
+	<tissue type="Pancreas">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.011</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0026</distribution>
+			<distribution type="Coeff of Variation">.27</distribution>
+		</param>
+	</tissue>
+	<tissue type="Spleen">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.032</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Lognormal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0033</distribution>
+			<distribution type="Coeff of Variation">.38</distribution>
+		</param>
+	</tissue>
+	<tissue type="Stomach">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.011</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0023</distribution>
+			<distribution type="Coeff of Variation">.31</distribution>
+		</param>
+	</tissue>
+	<tissue type="Small intestine">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.106</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.01</distribution>
+			<distribution type="Coeff of Variation">.12</distribution>
+		</param>
+	</tissue>
+	<tissue type="Large intestine">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.043</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0056</distribution>
+			<distribution type="Coeff of Variation">.20</distribution>
+		</param>
+	</tissue>
+	<tissue type="Muscle">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.181</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Lognormal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.443</distribution>
+			<distribution type="Coeff of Variation">.27</distribution>
+		</param>
+	</tissue>
+	<tissue type="Heart">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.043</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0057</distribution>
+			<distribution type="Coeff of Variation">.19</distribution>
+		</param>
+	</tissue>
+	<tissue type="Adipose">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.053</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Lognormal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.204</distribution>
+			<distribution type="Coeff of Variation">0.42</distribution>
+		</param>
+	</tissue>
+	<tissue type="Bone">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.053</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.162</distribution>
+			<distribution type="Coeff of Variation">.01</distribution>
+		</param>
+	</tissue>
+	<tissue type="Skin">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.053</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.052</distribution>
+			<distribution type="Coeff of Variation">0</distribution>
+		</param>
+	</tissue>
+	<tissue type="Gonads">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.0005</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0006</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+	</tissue>
+</Sex>
+ 
+<Sex type="Female">
+	<tissue type="Lung">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">1.0</distribution>
+			<distribution type="Coeff of Variation">0</distribution>
+		</param>
+		<param unit="Lognormal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.017</distribution>
+			<distribution type="Coeff of Variation">.33</distribution>
+		</param>
+	</tissue>
+	<tissue type="Brain">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.13</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.023</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+	</tissue>
+	<tissue type="Kidneys">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.2</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0067</distribution>
+			<distribution type="Coeff of Variation">.25</distribution>     
+		</param>
+	</tissue>
+	<tissue type="Liver">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.07</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.032</distribution>
+			<distribution type="Coeff of Variation">.25</distribution>    
+		</param>
+	</tissue>
+	<tissue type="Pancreas">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.01</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0028</distribution>
+			<distribution type="Coeff of Variation">.29</distribution>
+		</param>
+	</tissue>
+	<tissue type="Spleen">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.03</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Lognormal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0037</distribution>
+			<distribution type="Coeff of Variation">.38</distribution>     
+		</param>
+	</tissue>
+	<tissue type="Stomach">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.01</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0027</distribution>
+			<distribution type="Coeff of Variation">.13</distribution>
+		</param>
+	</tissue>
+	<tissue type="Small intestine">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.12</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.012</distribution>
+			<distribution type="Coeff of Variation">.13</distribution>
+		</param>
+	</tissue>
+	<tissue type="Large intestine">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.05</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0069</distribution>
+			<distribution type="Coeff of Variation">.13</distribution>
+		</param>
+	</tissue>
+	<tissue type="Muscle">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.12</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Lognormal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.338</distribution>
+			<distribution type="Coeff of Variation">.27</distribution>    
+		</param>
+	</tissue>
+	<tissue type="Heart">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.05</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0055</distribution>
+			<distribution type="Coeff of Variation">.25</distribution>    
+		</param>
+	</tissue>
+	<tissue type="Adipose">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.09</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Lognormal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.322</distribution>
+			<distribution type="Coeff of Variation">.42</distribution>    
+		</param>
+	</tissue>
+	<tissue type="Bone">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.05</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.152</distribution>
+			<distribution type="Coeff of Variation">.01</distribution>   
+		</param>
+	</tissue>
+	<tissue type="Skin">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.05</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.045</distribution>
+			<distribution type="Coeff of Variation">0</distribution>    
+		</param>
+	</tissue>
+	<tissue type="Gonads">
+		<param unit="Normal" type="Flow"> 
+			<distribution type="Mean" unit="Fraction">.0002</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>
+		</param>
+		<param unit="Normal" type="Volume"> 
+			<distribution type="Mean" unit="Fraction">.0002</distribution>
+			<distribution type="Coeff of Variation">.05</distribution>     
+		</param>
+	</tissue>
+</Sex>
+</root>

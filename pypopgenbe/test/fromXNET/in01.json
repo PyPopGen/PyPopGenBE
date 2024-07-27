@@ -1,0 +1,25 @@
+{
+    "population_size": 10000,
+    "dataset_name": "P3M",
+    "age_range": [
+        18,
+        60
+    ],
+    "bmi_range": [
+        20,
+        25
+    ],
+    "height_range": [
+        120,
+        170
+    ],
+    "prob_of_male": 0.5,
+    "probs_of_ethnicities": [
+        0.3,
+        0.4,
+        0.3
+    ],
+    "is_richly_perfused_tissue_discrete": false,
+    "is_slowly_perfused_tissue_discrete": false,
+    "seed": 42
+}

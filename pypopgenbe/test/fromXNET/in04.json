@@ -1,0 +1,21 @@
+{
+    "population_size": 10000,
+    "dataset_name": "NDNS",
+    "age_range": [
+        2,
+        4
+    ],
+    "bmi_range": [
+        20,
+        25
+    ],
+    "height_range": [
+        120,
+        170
+    ],
+    "prob_of_male": 0.5,
+    "probs_of_ethnicities": null,
+    "is_richly_perfused_tissue_discrete": false,
+    "is_slowly_perfused_tissue_discrete": false,
+    "seed": 42
+}

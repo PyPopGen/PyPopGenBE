@@ -1,0 +1,7 @@
+graft pypopgenbe/test
+graft pypopgenbe/defineconsts
+
+recursive-exclude pypopgenbe/test *.*
+recursive-exclude pypopgenbe/defineconsts *.*
+
+include pypopgenbe/popgenconsts.pkl
