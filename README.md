@@ -6,7 +6,13 @@ PyPopGenBE is a port of the [PopGen MATLAB backend](https://xnet.hsl.gov.uk/Popg
 
 ## Getting Started
 
-After installing the package, from a Python prompt, try: 
+Install the package from pypi.org:
+
+``` console
+$ python3 -m pip install pypopgenbe
+```
+
+From a Python prompt, sample 10 individuals, and list their heights and liver masses: 
 
 ``` python
 >>> from pypopgenbe import Dataset, generate_pop
@@ -18,13 +24,47 @@ After installing the package, from a Python prompt, try:
     height_range=(100, 150),
     prob_of_male=0.5,
     probs_of_ethnicities=(0.3, 0.4, 0.3),
-    is_richly_perfused_tissue_discrete=False,
-    is_slowly_perfused_tissue_discrete=False,
+    is_richly_perfused_tissue_discrete=[
+        False,
+        False,
+        False,
+        True, # kidneys
+        False,
+        True, # liver
+        False,
+        False,
+        False,
+        False
+    ],
+    is_slowly_perfused_tissue_discrete=[
+        True, # adipose
+        False,
+        False,
+        False
+    ],
     seed=42,
 )
 >>> population['Roots']['Names']
 ['Age', 'Sex', 'Ethnicity', 'Body Mass', 'Height', 'Cardiac Output']
->>> ages = population['Roots']['Values'][:,0]
->>> ages
-array([57.3782846 , 27.47917945, 19.43605721, 53.75596795, 39.95617671, 23.59815825, 36.90688673, 18.39038977, 46.7636573 , 30.27763087])
+>>> heights = population['Roots']['Values'][:,4]
+>>> heights
+array([161.73342684, 162.40729026, 156.1832546, 151.2041105, 164.37847922, 163.77112667, 158.80653778, 152.14851135, 155.82766881, 157.63376385])
+>>> population['Tissues']['Names']
+['Lung', 'Kidneys', 'Liver', 'Adipose', 'Liver Total', 'Slowly Perfused', 'Richly Perfused', 'Lung Bronchial']
+>>> population['Tissues']['Properties']
+['Mass', 'Flow']
+>>> liver_masses = population['Tissues']['Values'][:,2][:,0]
+>>> liver_masses
+array([2.58117028, 2.83772054, 1.6478209, 2.1865733, 2.41184484, 1.90865662, 2.10913417, 1.7031989, 1.06043036, 2.60443474])
+
+```
+
+Export the population data to CSV:
+
+``` python
+>>> from pypopgenbe import pop_to_csv
+>>> csv = pop_to_csv(population)
+>>> import os
+>>> with open("./test.csv", "w") as f:
+    f.writelines(line + os.linesep for line in csv)
 ```
